@@ -1,0 +1,6 @@
+-include Base.mk
+PROJECT = dummy
+#Define variables to be printed in usage()
+variables = PROJECT
+project_variables:  $(addprefix current_value_,$(variables))
+
